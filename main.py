@@ -128,10 +128,6 @@ class BlackJack:
             print (f"Your {sum(self.player_hand)} beats the Dealer's {sum(self.dealer_hand)}.")
             self.game_outcome = "Won"
 
-        else:
-            print("Something went terribly wrong when comparing the player and dealer hands. This should never happen.")
-            self.game_outcome = "Broken"
-
         return self.game_outcome
 
 game1 = BlackJack()
