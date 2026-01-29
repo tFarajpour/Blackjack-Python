@@ -39,14 +39,12 @@ class BlackJack:
         if sum(hand_to_hit)>21 and 11 in hand_to_hit:
             hand_to_hit[hand_to_hit.index(11)] = 1
 
-
     def check_if_bust(self, hand_to_check_for_bust):
         """Returns true if hand > 21. Else return False"""
         if sum(hand_to_check_for_bust) > 21:
             return True
         else:
             return False
-
 
     def play(self):
         """Starts the game and controls the game's flow:
